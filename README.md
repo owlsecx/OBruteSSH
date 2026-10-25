@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Professional multi-mode SSH security audit framework with
+OBruteSSH is an SSH credential-audit suite for authorised security testing, offering wordlist brute force, single-credential tests, key-based authentication and credential stuffing. It adds adaptive threading, smart rate-limiting, CIDR/range expansion, banner fingerprinting and an SSH-alive pre-scan to work efficiently across many hosts. Successful sessions can run post-auth commands, and results export to CSV, JSON, TXT and HTML.
 
 ---
 
 ## ✨ Features
 
-- OBruteSSH v1.1.0 — authorised SSH credential audit (wordlist, key, stuffing)
+- Wordlist brute force, single-credential, key-based and credential-stuffing modes
+- Adaptive threading with smart rate-limiting and transient-error retry
+- CIDR / IP-range expansion with a thread-safe SSH-alive pre-scan cache
+- SSH banner fingerprinting and duplicate-credential skipping
+- Post-auth interactive command runner with a custom command editor
+- Export to CSV, JSON, TXT and HTML with ETA and attempts/sec
 
 ---
 
@@ -39,6 +44,7 @@ Professional multi-mode SSH security audit framework with
 
 ```bash
 ./OBruteSSH
+./OBruteSSH --help
 ```
 
 ---
